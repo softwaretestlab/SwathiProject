@@ -2,17 +2,17 @@ package SeleniumLearning;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.concurrent.TimeUnit;
-public class AT03_XpathLearning {
+
+public class AT04_CssSelectorLearning {
 
     @Test
-    public void xpath() throws InterruptedException {
+    public void css(){
+
         //Setting up chromedriver.
         WebDriverManager.chromedriver().setup();
         //options
@@ -23,16 +23,10 @@ public class AT03_XpathLearning {
         //maximize browser
         driver.manage().window().maximize();
         // navigate to HN website
-        driver.get("https://www.harveynorman.com.au/");
+        driver.get("https://www.thegoodguys.com.au/UserRegistrationForm?myAcctMain=1&new=Y&catalogId=30000&langId=-1&storeId=900");
         //implicit wait
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //Xpath version-1
-        driver.findElement(By.xpath("//a[@href='https://www.harveynorman.com.au/gift-cards']")).click();
-        //xpath verstion-2
-        //xpath version-2
-        driver.findElement(By.xpath("//span[contains(text(),'Store finder')]")).click();
-        Thread.sleep(15000);
-
-
+        // Verison-1 -- css --starts with
+        driver.findElement(By.cssSelector("input[name^='f']")).sendKeys("test");
     }
 }

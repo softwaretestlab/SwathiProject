@@ -2,17 +2,13 @@ package SeleniumLearning;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import java.util.concurrent.TimeUnit;
-public class AT03_XpathLearning {
-
+public class AT07_iframeConcept {
     @Test
-    public void xpath() throws InterruptedException {
+    public void mpaafdlearn() throws InterruptedException {
         //Setting up chromedriver.
         WebDriverManager.chromedriver().setup();
         //options
@@ -22,17 +18,15 @@ public class AT03_XpathLearning {
         //At this point browser will be opened
         //maximize browser
         driver.manage().window().maximize();
-        // navigate to HN website
-        driver.get("https://www.harveynorman.com.au/");
-        //implicit wait
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //Xpath version-1
-        driver.findElement(By.xpath("//a[@href='https://www.harveynorman.com.au/gift-cards']")).click();
-        //xpath verstion-2
+        //xpath version-1
+        driver.get("https://stores.harveynorman.com.au/");
+        Thread.sleep(10000);
+        //iframe
+        driver.switchTo().frame(0);
         //xpath version-2
-        driver.findElement(By.xpath("//span[contains(text(),'Store finder')]")).click();
-        Thread.sleep(15000);
-
+        driver.findElement(By.xpath("//input[contains(@aria-label,'Search Location')]")).click();
+        driver.findElement(By.xpath("//input[contains(@aria-label,'Search Location')]")).sendKeys("7 crop drive fraser rise");
 
     }
+
 }
