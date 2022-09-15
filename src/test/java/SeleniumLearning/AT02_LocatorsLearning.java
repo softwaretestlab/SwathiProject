@@ -1,4 +1,5 @@
 package SeleniumLearning;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -10,8 +11,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 
 import java.util.concurrent.TimeUnit;
-public class AT02_LocatorsLearning {
 
+public class AT02_LocatorsLearning {
     @Test
     public void locLearn() throws InterruptedException {
         //Setting up chromedriver.
@@ -27,15 +28,14 @@ public class AT02_LocatorsLearning {
         driver.get("https://www.thegoodguys.com.au/UserRegistrationForm?myAcctMain=1&new=Y&catalogId=30000&langId=-1&storeId=900");
         //implicit wait
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
         //by id
-        driver.findElement(By.id("regAddForm_firstName")).sendKeys("FirstName");
-        Thread.sleep(10000);
-        //by Name
-        driver.findElement(By.name("lastName")).sendKeys("LastName");
-        Thread.sleep(10000);
-        //by linktext
-        driver.findElement(By.linkText("Catalogues")).click();
+        driver.findElement(By.id("regAddForm_firstName")).sendKeys("test");
+        //by name
+        driver.findElement(By.name("lastName")).sendKeys("test");
+        //link texg
+        driver.findElement(By.partialLinkText("Catalo")).click();
+        //xpath
+//input[@type='email']
 
     }
 }

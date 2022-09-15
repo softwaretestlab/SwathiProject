@@ -7,8 +7,9 @@ public class AT02_WhileLoop {
     public void WhileLoopLearn(){
         int count=50;
         while(count<60){
-            System.out.println("Count value is : "+count);
+            System.out.println("count valus is : "+count);
             count++;
         }
+
     }
 }

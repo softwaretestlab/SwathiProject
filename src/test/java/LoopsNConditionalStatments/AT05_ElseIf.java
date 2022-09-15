@@ -4,19 +4,21 @@ import org.junit.Test;
 
 public class AT05_ElseIf {
     @Test
-    public void ElseIfLoopLearn(){
-        String browser ="FIREFOXr";
-        if(browser.equalsIgnoreCase("chrome")){
-            System.out.println("Test cases will be executed on chrome");
+    public void ElseIfLoopLearn() {
+        String browser = "FIREFOX";
+        if (browser.equalsIgnoreCase("chrome")) {
+            System.out.println("test case will execute on chrome");
         }
-        else if(browser.equalsIgnoreCase("IE")){
-            System.out.println("Test cases will be executed on IE");
+        else if(browser.equalsIgnoreCase("ie")) {
+            System.out.println("test case will execute on ie");
         }
-        else if(browser.equalsIgnoreCase("firefox")){
-            System.out.println("Test cases will be executed on FIREFOX");
+        else if(browser.equalsIgnoreCase("firefox")) {
+            System.out.println("test case will execute on firefox");
         }
-        else{
+
+        else {
             System.out.println("Browser is not in the list");
         }
+
     }
 }

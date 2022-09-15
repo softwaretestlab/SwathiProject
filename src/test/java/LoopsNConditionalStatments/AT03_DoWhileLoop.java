@@ -5,10 +5,10 @@ import org.junit.Test;
 public class AT03_DoWhileLoop {
     @Test
     public void DoWhileLoopLearn(){
-        int ticket =74;
+        int ticket=74;
         do{
-            System.out.println("Current ticket numebr : "+ticket);
+            System.out.println("Current Ticket Number is : "+ticket);
             ticket++;
-        }while(ticket<80);
+        }while(ticket<=80);
     }
 }

@@ -1,6 +1,7 @@
 package SeleniumLearning;
 
 import BaseClass.OpenBrowser;
+import PropertiesFile.ReadPropertiesFile;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
@@ -25,7 +26,7 @@ public class AT01_NavigateTitleAssertScreenshot {
 //        driver.manage().window().maximize();
 //        //navigate to url
 //        driver.get("https://www.harveynorman.com.au/");
-        OpenBrowser.NavtoWebsite("https://www.harveynorman.com.au/");
+        OpenBrowser.NavtoWebsite(ReadPropertiesFile.PropFile("HomePageUrl"));
         //implicit wait
         OpenBrowser.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         //get title
