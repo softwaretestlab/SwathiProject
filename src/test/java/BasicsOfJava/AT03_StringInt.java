@@ -23,4 +23,6 @@ public class AT03_StringInt {
         System.out.println("Value of test03 is : "+test03);
            }
 
+    public static class AT13_trimLearn {
+    }
 }
