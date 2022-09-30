@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-09-16T03:51:45.280Z",
+        "start_timestamp": "2022-09-16T22:07:48.261Z",
         "line": 6,
         "name": "Navigate to HN website",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 17011713600,
+              "duration": 16435145300,
               "status": "passed"
             },
             "line": 7,
@@ -25,9 +25,8 @@
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Computers, Electrical, Furniture \u0026 Bedding | Harvey Norman Australia]\u003e but was:\u003c[]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat SeleniumCode.AT01_NavigateNTitleAssertScreenshot.AssertTitle(AT01_NavigateNTitleAssertScreenshot.java:28)\r\n\tat StepDefinations.SD01_NavigateToHNwebsite.get_title_and_assert(SD01_NavigateToHNwebsite.java:18)\r\n\tat ✽.get title and assert(file:///C:/Users/softw/IdeaProjects/SwathiProject/src/test/java/FeatureFiles/FF01_NavigateToHNwebsite.feature:8)\r\n",
-              "duration": 79054000,
-              "status": "failed"
+              "duration": 1249179700,
+              "status": "passed"
             },
             "line": 8,
             "name": "get title and assert",

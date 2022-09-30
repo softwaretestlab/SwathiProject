@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.535">
-    <testcase classname="HN Homepage" name="Navigate to HN website" time="17.242">
-        <failure message="expected:&lt;[Computers, Electrical, Furniture &amp; Bedding | Harvey Norman Australia]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="18.355">
+    <testcase classname="HN Homepage" name="Navigate to HN website" time="17.96">
+        <system-out>
             <![CDATA[Given open the browser and enter url and navigate to HN website.............passed
-Then get title and assert...................................................failed
-
-StackTrace:
-org.junit.ComparisonFailure: expected:<[Computers, Electrical, Furniture & Bedding | Harvey Norman Australia]> but was:<[]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at SeleniumCode.AT01_NavigateNTitleAssertScreenshot.AssertTitle(AT01_NavigateNTitleAssertScreenshot.java:28)
-	at StepDefinations.SD01_NavigateToHNwebsite.get_title_and_assert(SD01_NavigateToHNwebsite.java:18)
-	at ✽.get title and assert(file:///C:/Users/softw/IdeaProjects/SwathiProject/src/test/java/FeatureFiles/FF01_NavigateToHNwebsite.feature:8)
+Then get title and assert...................................................passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>

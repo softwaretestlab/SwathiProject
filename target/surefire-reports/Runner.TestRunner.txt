@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 19.381 s <<< FAILURE! - in Runner.TestRunner
-Navigate to HN website #2(HN Homepage)  Time elapsed: 17.478 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[Computers, Electrical, Furniture & Bedding | Harvey Norman Australia]> but was:<[]>
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.616 s - in Runner.TestRunner
